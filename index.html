@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
 <body>
   <div class="wrapper">
@@ -15,18 +15,37 @@
         <div class="brand">
           <h2>A<span>R</span></h2>
         </div>
-        <ul class="menu">
+        <ul class="menu" id="menu">
           <li><a class="active" href="#">Home</a></li>
           <li><a href="#">About me</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <div class="toggle-menu">
+          <i class="fas fa-bars" id="toggle-open"></i>
+          <i class="fas fa-close" id="toggle-close"></i>
+        </div>
       </nav>
     </header>
     <main class="main">
       <div class="info-content">
+        <span class="info-content-subtitle">Frontend Developer</span>
         <h1>I'm <span>Alexis </span>Rodriguez</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nemo, aliquam, nesciunt quibusdam dicta qui a itaque nihil reprehenderit iusto beatae totam repudiandae neque omnis modi magni laudantium debitis. Rerum!</p>
+        <div class="sotial-networks">
+          <a href="">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p class="info-content-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nemo, aliquam, nesciunt quibusdam dicta qui a itaque nihil reprehenderit iusto beatae totam repudiandae neque omnis modi magni laudantium debitis. Rerum!</p>
         <a download href="#">
           <button class="download-cv">Download CV</button>
         </a>
@@ -61,53 +80,16 @@
           <a href="" target="_blank">
             <i class="fab fa-github"></i>
           </a>
-          <a href="">
+          <a href="" target="_blank">
             <i class="fas fa-globe-americas"></i>
           </a>
         </div>
         <div class="project-details-content">
-          <button class="project-details download-cv">
+          <button class="project-details-button">
             <a href="">project details</a>
           </button>
         </div>
       </div>
-      <div class="card">
-        <div class="card-img"></div>
-        <div class="card-tittle">
-          <h2>Project Description</h2>
-        </div>
-        <div class="card-projects-links">
-          <a href="" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="">
-            <i class="fas fa-globe-americas"></i>
-          </a>
-        </div>
-        <div class="project-details-content">
-          <button class="project-details download-cv">
-            <a href="">project details</a>
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img"></div>
-        <div class="card-tittle">
-          <h2>Project Description</h2>
-        </div>
-        <div class="card-projects-links">
-          <a href="" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="">
-            <i class="fas fa-globe-americas"></i>
-          </a>
-        </div>
-        <div class="project-details-content">
-          <button class="project-details download-cv">
-            <a href="">project details</a>
-          </button>
-        </div>
       </div>
     </div>
   </div>
@@ -118,10 +100,10 @@
       <div class="divider"></div>
     </div>
     <div class="container-contact">
-      <img src="./img/img-opacity50.png" alt="alexis rodriguez picture">
+      <img class="contact-section-img" src="./img/img-opacity50.png" alt="alexis rodriguez picture">
       <div class="contact-form">
         <h4>Send me a message...</h4>
-        <form class="form">
+        <form class="form-group">
           <input type="text" placeholder="Name">
           <input type="email" placeholder="Email">
           <textarea placeholder="Place your message her"></textarea>
@@ -136,7 +118,7 @@
       <h2>Alexis Rodriguez</h2>
       <h5>Frontend developer</h5>
     </div>
-    <div class="sotial-network">
+    <div class="sotial-networks">
       <a href="">
         <i class="fab fa-facebook-square"></i>
       </a>
@@ -152,5 +134,6 @@
     </div>
   </footer>
 
+  <script src="js/scripts.js"></script>
 </body>
 </html>

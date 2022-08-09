@@ -15,3 +15,27 @@ function toggleMenu() {
         toggleClose.style.display = 'none';
     }
 }
+
+window.onload = function () {
+    const $form = document.querySelector('.form-group');
+    // const $buttonMailto = document.querySelector('#trucazo');
+    $form.addEventListener('submit', handleSubmit);
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        const response = await fetch(this.action, {
+            method: this.method,
+            body: form,
+            headers: {
+                Accept: 'application/json',
+            },
+        })
+        if (response.ok) {
+            this.reset()
+            alert('Mensaje enviado');
+        }
+        // $buttonMailto.setAttribute('href', `mailto:alexisrodriguezarteaga@gmail.com?subject=${form.get('name')}&body=${form.get('message')}`);
+        // $buttonMailto.click();
+    }
+};

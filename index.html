@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
+
 <body>
   <div class="wrapper">
     <header>
@@ -45,7 +47,9 @@
             <i class="fab fa-instagram"></i>
           </a>
         </div>
-        <p class="info-content-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nemo, aliquam, nesciunt quibusdam dicta qui a itaque nihil reprehenderit iusto beatae totam repudiandae neque omnis modi magni laudantium debitis. Rerum!</p>
+        <p class="info-content-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nemo, aliquam,
+          nesciunt quibusdam dicta qui a itaque nihil reprehenderit iusto beatae totam repudiandae neque omnis modi
+          magni laudantium debitis. Rerum!</p>
         <a href="CV-AlexisRodriguez.pdf" download>
           <button class="download-cv">Download CV</button>
         </a>
@@ -79,23 +83,24 @@
       </div>
       <div class="card">
         <div class="card-img">
-          <img src="img/calculator.png" alt="calculator">
+          <img src="img/charizard.png" alt="calculator">
         </div>
         <div class="card-tittle">
-          <h2>Project Description</h2>
+          <h2>Pokédex</h2>
+          <p>Proyecto realizado para poner en práctica conocimientos de fetch API y manejo de DOM</p>
         </div>
         <div class="card-projects-links">
-          <a href="https://github.com/alexisarte/calculator" target="_blank">
+          <a href="https://github.com/alexisarte/pokedex" target="_blank">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://alexisarte.github.io/calculator/" target="_blank">
+          <a href="https://alexisarte.github.io/pokedex/" target="_blank">
             <i class="fas fa-globe-americas"></i>
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card-img">
-          <img src="img/calculator.png" alt="calculator">
+          <img src="img/charizard.png" alt="calculator">
         </div>
         <div class="card-tittle">
           <h2>Project Description</h2>
@@ -111,7 +116,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="skills">
     <a name="skills"></a>
     <div class="skills">
@@ -146,11 +151,11 @@
     <div class="container-contact">
       <div class="contact-form">
         <h4>Send me a message...</h4>
-        <form class="form-group">
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Place your message her..."></textarea>
-          <button class="btn-submit">Send message</button>
+        <form class="form-group" action="https://formspree.io/f/xrgdggrz" method="POST">
+          <input name="name" type="text" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Place your message here..." required></textarea>
+          <button type="submit" class="btn-submit">Send message</button>
         </form>
       </div>
     </div>
@@ -177,4 +182,5 @@
 
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

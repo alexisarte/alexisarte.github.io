@@ -127,7 +127,14 @@ span {
   margin-bottom: 1em;
 }
 
-.potfolio-headings {
+.portfolio {
+  background-color: #161b22;
+  min-height: 100vh;
+}
+
+.portfolio-headings, 
+.skills-headings, 
+.contact-headings {
   width: 100vw;
   display: flex;
   flex-direction: column; 
@@ -135,12 +142,9 @@ span {
   padding: 5em;
 }
 
-.portfolio {
-  background-color: #161b22;
-  min-height: 100vh;
-}
-
-.portfolio-headings h2 {
+.portfolio-headings h2, 
+.skills-headings h2, 
+.contact-headings h2 {
   font-size: 2em;
 }
 
@@ -193,22 +197,8 @@ img {
 } 
 
 /* Skills */
-.skills {
-  height: 100vh;
-  background-color: #0d1117;
-  display: flex;
-  /* align-items: center; */
-}
 
-.skills div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.skills div ul {
+.skills ul {
   margin: 1%;
   list-style: none;
   padding: 1%;

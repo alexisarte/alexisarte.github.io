@@ -193,13 +193,32 @@ img {
   font-size: 1.5em;  
 } 
 
+#inflation-calculator {
+  width: 630px;
+  height: 550px;
+  background-color: #101e4b;
+  margin: 1em;
+}
+
 /* Skills */
 
-.skills ul {
-  margin: 1%;
-  list-style: none;
-  padding: 1%;
-  text-align: center;
+.skills-content {
+  display: inline-block;
+  margin: auto;
+  width: 100vw;
+}
+
+.skills-content div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills-content img {
+  width: 10%;
+  height: 10%;
+  margin: 5%;
+  padding: 1%; 
 }
 
 .contact-section {

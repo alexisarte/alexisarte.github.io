@@ -17,10 +17,8 @@ function toggleMenu() {
 }
 
 window.onload = function () {
-    const $form = document.querySelector('.form-group');
-    // const $buttonMailto = document.querySelector('#trucazo');
+    const $form = document.querySelector('#form');
     $form.addEventListener('submit', handleSubmit);
-
     async function handleSubmit(event) {
         event.preventDefault();
         const form = new FormData(this);
@@ -35,7 +33,5 @@ window.onload = function () {
             this.reset()
             alert('Mensaje enviado');
         }
-        // $buttonMailto.setAttribute('href', `mailto:alexisrodriguezarteaga@gmail.com?subject=${form.get('name')}&body=${form.get('message')}`);
-        // $buttonMailto.click();
     }
 };

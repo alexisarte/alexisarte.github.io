@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div id="wrapper">
     <header>
       <nav class="navbar">
         <div class="brand">
@@ -24,38 +24,35 @@
           <li><a href="index.html#skills">Skills</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
-        <div class="toggle-menu">
+        <div id="toggle-menu">
           <i class="fas fa-bars" id="toggle-open"></i>
           <i class="fas fa-close" id="toggle-close"></i>
         </div>
       </nav>
     </header>
-    <main class="main">
-      <div class="info-content">
+    <main>
+      <div id="info-content">
         <h1>I'm <span>Alexis </span>Rodriguez</h1>
-        <p class="info-content-p">
-          Soy un desarrollador web full stack en proceso, formándome de manera autodidacta para conseguir mi primer
-          trabajo en la industria del desarrollo web, además estoy estudiando la carrera de Analista en TIC en la
-          Universidad Nacional de La Plata.
+        <p>
+          I am a full stack web developer in process, training myself in a self-taught way to get my first job in the
+          web development industry, I am also studying the career of ICT Analyst at the National University of La Plata
         </p>
         <a href="CV-AlexisRodriguez.pdf" download>
-          <button class="download-cv">Download CV</button>
+          <button id="download-cv">Download CV</button>
         </a>
       </div>
     </main>
   </div>
 
-  <div class="portfolio">
-    <a name="portfolio"></a>
-    <div class="portfolio-headings">
+  <section id="portfolio">
+    <div class="headings">
       <h2>Portfolio</h2>
       <div class="divider"></div>
     </div>
-    <div class="container">
+    <div id="portfolio-content">
       <div class="card">
         <div class="card-img">
           <img src="img/calculator.png" alt="calculator">
-          
         </div>
         <div class="card-tittle">
           <h2>Calculator</h2>
@@ -76,7 +73,7 @@
         </div>
         <div class="card-tittle">
           <h2>Pokédex</h2>
-          <p>Proyecto realizado para poner en práctica conocimientos de fetch API y manejo de DOM</p>
+          <p>Project carried out to learn how to do data fetching from a REST API, event management and DOM</p>
         </div>
         <div class="card-projects-links">
           <a href="https://github.com/alexisarte/pokedex" target="_blank">
@@ -87,13 +84,13 @@
           </a>
         </div>
       </div>
-      <div class="card">
+      <div class="card" id="inflation-calculator">
         <div class="card-img">
           <img src="img/inflation-calculator.png" alt="Inflation calculator">
         </div>
         <div class="card-tittle">
           <h2>Inflation Calculator</h2>
-          <p>Project carried out in order to put into practice basic knowledge of backend (NodeJS, ExpressJs).</p>
+          <p>Project carried out in order to put into practice basic knowledge of backend (NodeJS, ExpressJs and JSON).</p>
         </div>
         <div class="card-projects-links">
           <a href="https://github.com/alexisarte/inflation-calculator" target="_blank">
@@ -105,35 +102,34 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="skills">
-    <a name="skills"></a>
-    <div class="skills-headings">
+  <section id="skills">
+    <div class="headings">
       <h2>Skills</h2>
       <div class="divider"></div>
     </div>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>NodeJS</li>
-      <li>ExpressJs</li>
-      <li>React</li>
-      <li>NodeJS</li>
-      <li>Git</li>
-    </ul>
-  </div>
+    <div id="skills-content">
+      <div>
+        <img src="icons/html5_icon.svg" alt="html5 icon">
+        <img src="icons/css3_icon.svg" alt="css3 icon">
+        <img src="icons/javascript_icon.svg" alt="javascript icon">
+      </div>
+      <div>
+        <img src="icons/nodejs_icon.svg" alt="nodejs icon">
+        <img src="icons/reactjs_icon.svg" alt="reactjs icon">
+      </div>
+    </div>
+  </section>
 
-  <div class="contact-section">
-    <a name="contact"></a>
-    <div class="contact-headings">
+  <div id="contact">
+    <div class="headings">
       <h2>Contact</h2>
       <div class="divider"></div>
     </div>
-    <div class="container-contact">
+    <div id="contact-content">
       <h4>Send me a message...</h4>
-      <form class="form-group" action="https://formspree.io/f/xrgdggrz" method="POST">
+      <form id="form" action="https://formspree.io/f/xrgdggrz" method="POST">
         <input name="name" type="text" placeholder="Name" required>
         <input name="email" type="email" placeholder="Email" required>
         <textarea name="message" placeholder="Place your message here..." required></textarea>
@@ -142,13 +138,12 @@
     </div>
   </div>
 
-  <footer class="footer">
-    <a name="footer"></a>
-    <div class="footer-content">
+  <footer id="footer">
+    <div id="footer-content">
       <h2>Alexis Rodriguez</h2>
       <h5>Fullstack web developer</h5>
     </div>
-    <div class="sotial-networks">
+    <div id="sotial-networks">
       <a href="https://github.com/alexisarte" target="_blank">
         <i class="fab fa-github"></i>
       </a>

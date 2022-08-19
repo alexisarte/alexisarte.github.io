@@ -205,23 +205,27 @@ img {
 /* Skills */
 
 #skills-content {
-  display: inline-block;
+  display: flex;
   margin: auto;
   width: 100vw;
   min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 #skills-content div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+ 
 }
 
-#skills-content img {
-  width: 10%;
-  height: 10%;
-  margin: 5%;
-  padding: 1%; 
+#skills-content div img {
+   
+}
+
+#express-container {
+  background-color: #fff;
+  max-width: 25%;
 }
 
 #contact {

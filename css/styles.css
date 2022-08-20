@@ -30,7 +30,7 @@ body {
   margin-top: -10px;
 }
 
-.brand span{
+.brand span {
   color: aqua;
 }
 
@@ -57,7 +57,7 @@ body {
 .menu a:hover {
   background-color: aqua;
   color: #191c32;
-  transition: ease-in .4s;
+  transition: ease-in 0.4s;
 }
 
 #toggle-menu {
@@ -117,7 +117,7 @@ span {
 
 .about-info h2 {
   font-size: 2em;
-  color: #191c32
+  color: #191c32;
 }
 
 .divider {
@@ -139,7 +139,7 @@ span {
 .headings {
   width: 100vw;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2.5%;
@@ -171,7 +171,7 @@ span {
   padding-top: 5%;
 }
 
-img { 
+img {
   width: 100%;
   height: 100%;
 }
@@ -192,8 +192,8 @@ img {
 }
 
 .card-projects-links i {
-  font-size: 1.5em;  
-} 
+  font-size: 1.5em;
+}
 
 #inflation-calculator {
   width: 630px;
@@ -203,29 +203,29 @@ img {
 }
 
 /* Skills */
+#skills .headings {
+  padding-bottom: 2%;
+}
 
-#skills-content {
-  display: flex;
-  margin: auto;
-  width: 100vw;
-  min-height: 80vh;
+#skills #container{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
 
-#skills-content div {
- 
-}
-
-#skills-content div img {
-   
+#skills-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 #express-container {
   background-color: #fff;
-  max-width: 25%;
+  border-radius: 50%;
+}
+
+#js-container {
+  background-color: #161b22;
 }
 
 #contact {
@@ -343,5 +343,4 @@ img {
   #form {
     width: 80vw;
   }
-
 }

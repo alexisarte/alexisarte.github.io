@@ -15,7 +15,7 @@ body {
 #wrapper,
 #skills {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #0d1117;
   color: #fff;
 }
@@ -338,6 +338,13 @@ img {
   #toggle-close {
     font-size: 1.5em;
     display: none;
+  }
+
+  #skills-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 5%;
   }
 
   #form {

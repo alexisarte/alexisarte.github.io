@@ -24,6 +24,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2em;
+  background-color: #161b22;
+  position: fixed;
+  width: 100vw;
+  border-bottom: 1px solid #fff;
 }
 
 .brand {
@@ -80,10 +84,6 @@ main {
   align-items: center;
 }
 
-h1 {
-  font-size: clamp(4vw, 1.5em, 3em);
-}
-
 span {
   color: aqua;
 }
@@ -103,32 +103,11 @@ span {
   box-shadow: none;
 }
 
-.about {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
-  align-items: center;
-}
-
-.about-info {
-  grid-column: 5/10;
-  padding: 2em;
-}
-
-.about-info h2 {
-  font-size: 2em;
-  color: #191c32;
-}
-
 .divider {
   height: 4px;
   width: 100%;
   background-color: aqua;
   margin-top: 5px;
-}
-
-.about p {
-  margin-bottom: 1em;
 }
 
 #portfolio {
@@ -150,7 +129,6 @@ span {
 }
 
 #portfolio-content {
-  width: 80vw;
   margin: 0 auto;
   display: flex;
   justify-content: center;

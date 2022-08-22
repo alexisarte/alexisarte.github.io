@@ -35,7 +35,6 @@ window.onload = function () {
     }
   }
   ScrollReveal().reveal('#info-content', { delay: 500 });
-  ScrollReveal().reveal('#portfolio-content', { delay: 500 });
-  ScrollReveal().reveal('#skills-content', { delay: 500 });
-
+  ScrollReveal().reveal('.card', { interval: 500 });
+  ScrollReveal().reveal('.skills-reveal', { interval: 200 });
 };

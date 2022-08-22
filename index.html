@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexis | Portfolio</title>
+  <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- NORMALIZE -->
   <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+  <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <!-- SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -31,7 +36,7 @@
       </nav>
     </header>
     <main>
-      <div id="info-content">
+      <div id="info-content" class="load-hidden">
         <h1>I'm <span>Alexis </span>Rodriguez</h1>
         <p>
           I am a full stack web developer in process, training myself in a self-taught way to get my first job in the
@@ -112,12 +117,12 @@
     </div>
     <div id="container">
       <div id="skills-content">
-        <div><img src="icons/html5_icon.svg" alt="html5 icon"></div>
-        <div><img src="icons/css3_icon.svg" alt="css3 icon"></div>
-        <div id="js-container"><img src="icons/javascript_icon.svg" alt="javascript icon"></div>
-        <div><img src="icons/nodejs_icon.svg" alt="nodejs icon"></div>
-        <div id="express-container"><img src="icons/expressjs_icon.svg" alt="expressjs icon"></div>
-        <div><img src="icons/reactjs_icon.svg" alt="reactjs icon"></div>
+        <div class="skills-reveal"><img src="icons/html5_icon.svg" alt="html5 icon"></div>
+        <div class="skills-reveal"><img src="icons/css3_icon.svg" alt="css3 icon"></div>
+        <div class="skills-reveal" id="js-container"><img src="icons/javascript_icon.svg" alt="javascript icon"></div>
+        <div class="skills-reveal"><img src="icons/nodejs_icon.svg" alt="nodejs icon"></div>
+        <div class="skills-reveal" id="express-container"><img src="icons/expressjs_icon.svg" alt="expressjs icon"></div>
+        <div class="skills-reveal"><img src="icons/reactjs_icon.svg" alt="reactjs icon"></div>
       </div>
     </div>
   </section>
@@ -152,8 +157,7 @@
       </a>
     </div>
   </footer>
-  <!-- SCROLL REVEAL-->
-  <script src="https://unpkg.com/scrollreveal"></script>
+
   <script src="js/scripts.js"></script>
 </body>
 

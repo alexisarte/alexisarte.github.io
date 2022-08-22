@@ -329,3 +329,8 @@ img {
     width: 80vw;
   }
 }
+
+/* SCROLL REVEAL */
+html.sr .load-hidden {
+  visibility: hidden;
+}

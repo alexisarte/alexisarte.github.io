@@ -198,7 +198,7 @@ img {
   padding: 2%;
 }
 
-#skills-content div{
+#skills-content div {
   width: 80%;
   margin: auto;
 }
@@ -344,6 +344,8 @@ img {
 }
 
 /* SCROLL REVEAL */
-html.sr .load-hidden {
+html.sr .load-hidden,
+.skills-reveal,
+.card {
   visibility: hidden;
 }

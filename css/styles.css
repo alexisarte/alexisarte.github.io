@@ -185,7 +185,7 @@ img {
   padding-bottom: 2%;
 }
 
-#skills #container{
+#skills #container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,13 +193,25 @@ img {
 
 #skills-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  padding: 2%;
+}
+
+#skills-content div{
+  width: 80%;
+  margin: auto;
 }
 
 #express-container {
   background-color: #fff;
   border-radius: 50%;
+}
+
+#mysql-container {
+  background-color: #fff;
+  height: 100%;
+  border-radius: 10%;
 }
 
 #js-container {
@@ -321,6 +333,7 @@ img {
   #skills-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 20px;
     padding: 5%;
   }

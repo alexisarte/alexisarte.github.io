@@ -2,17 +2,20 @@ let menu = document.querySelector('#menu');
 let toggleOpen = document.querySelector('#toggle-open');
 let toggleClose = document.querySelector('#toggle-close');
 
-toggleOpen.addEventListener('click', toggleMenu);
-toggleClose.addEventListener('click', toggleMenu);
+toggleOpen.addEventListener('click', e => toggleMenu(e));
+toggleClose.addEventListener('click', e => toggleMenu(e));
+menu.addEventListener('click', e => toggleMenu(e));
 
-function toggleMenu() {
-  menu.classList.toggle('show-menu');
-  if (menu.classList.contains('show-menu')) {
-    toggleOpen.style.display = 'none';
-    toggleClose.style.display = 'block';
-  } else {
-    toggleOpen.style.display = 'block';
-    toggleClose.style.display = 'none';
+function toggleMenu(e) {
+  if (e.target.tagName !== 'UL') {
+    menu.classList.toggle('show-menu');
+    if (menu.classList.contains('show-menu')) {
+      toggleOpen.style.display = 'none';
+      toggleClose.style.display = 'block';
+    } else {
+      toggleOpen.style.display = 'block';
+      toggleClose.style.display = 'none';
+    }
   }
 }
 

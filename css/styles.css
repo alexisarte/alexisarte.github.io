@@ -354,6 +354,6 @@ span {
 /* SCROLL REVEAL */
 html.sr .load-hidden,
 .skills-reveal,
-.card {
+.cards-reveal {
   visibility: hidden;
 }

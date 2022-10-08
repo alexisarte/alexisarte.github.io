@@ -20,6 +20,11 @@ body {
   color: #fff;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 #skills {
   width: 100vw;
   min-height: 100vh;
@@ -157,11 +162,6 @@ span {
   padding-top: 5%;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 .card-tittle {
   padding: 5%;
   text-align: center;
@@ -181,7 +181,7 @@ img {
   font-size: 1.5em;
 }
 
-#inflation-calculator {
+.double-card {
   width: 630px;
   height: 550px;
   background-color: #101e4b;

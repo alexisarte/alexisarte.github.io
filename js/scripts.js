@@ -34,7 +34,10 @@ window.onload = function () {
     });
     if (response.ok) {
       this.reset();
-      alert('Mensaje enviado');
+      swal({
+        title: 'Mensaje enviado',
+        icon: 'success'
+      });
     }
   }
   ScrollReveal().reveal('#info-content', { delay: 500 });

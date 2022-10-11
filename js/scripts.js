@@ -6,6 +6,10 @@ toggleOpen.addEventListener('click', e => toggleMenu(e));
 toggleClose.addEventListener('click', e => toggleMenu(e));
 menu.addEventListener('click', e => toggleMenu(e));
 
+/**
+ * Function to show/hide the navigation bar on mobile devices
+ * @param e The onclick event
+ */
 function toggleMenu(e) {
   if (e.target.tagName !== 'UL') {
     menu.classList.toggle('show-menu');

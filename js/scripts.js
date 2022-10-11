@@ -34,6 +34,7 @@ window.onload = function () {
     });
     if (response.ok) {
       this.reset();
+      /*global swal*/
       swal({
         title: 'Mensaje enviado',
         icon: 'success'

@@ -2,9 +2,9 @@ let menu = document.querySelector('#menu');
 let toggleOpen = document.querySelector('#toggle-open');
 let toggleClose = document.querySelector('#toggle-close');
 
-toggleOpen.addEventListener('click', e => toggleMenu(e));
-toggleClose.addEventListener('click', e => toggleMenu(e));
-menu.addEventListener('click', e => toggleMenu(e));
+toggleOpen.addEventListener('click', (e) => toggleMenu(e));
+toggleClose.addEventListener('click', (e) => toggleMenu(e));
+menu.addEventListener('click', (e) => toggleMenu(e));
 
 /**
  * Function to show/hide the navigation bar on mobile devices
@@ -33,8 +33,8 @@ window.onload = function () {
       method: this.method,
       body: form,
       headers: {
-        Accept: 'application/json',
-      },
+        Accept: 'application/json'
+      }
     });
     if (response.ok) {
       this.reset();

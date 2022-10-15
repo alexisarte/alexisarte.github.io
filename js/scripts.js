@@ -26,6 +26,11 @@ function toggleMenu(e) {
 window.onload = function () {
   const $form = document.querySelector('#form');
   $form.addEventListener('submit', handleSubmit);
+
+  /**
+   * Function to send the form to formspree
+   * @param event The submit event
+   */
   async function handleSubmit(event) {
     event.preventDefault();
     const form = new FormData(this);
@@ -41,10 +46,11 @@ window.onload = function () {
       /*global swal*/
       swal({
         title: 'Mensaje enviado',
-        icon: 'success'
+        icon: 'success',
       });
     }
   }
+
   ScrollReveal().reveal('#info-content', { delay: 500 });
   ScrollReveal().reveal('.cards-reveal', { interval: 500 });
   ScrollReveal().reveal('.skills-reveal', { interval: 200 });

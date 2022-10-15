@@ -1,30 +1,30 @@
-let menu = document.querySelector('#menu');
-let toggleOpen = document.querySelector('#toggle-open');
-let toggleClose = document.querySelector('#toggle-close');
+window.onload = function () {
+  const menu = document.querySelector('#menu');
+  const toggleOpen = document.querySelector('#toggle-open');
+  const toggleClose = document.querySelector('#toggle-close');
+  const $form = document.querySelector('#form');
 
-toggleOpen.addEventListener('click', e => toggleMenu(e));
-toggleClose.addEventListener('click', e => toggleMenu(e));
-menu.addEventListener('click', e => toggleMenu(e));
+  toggleOpen.addEventListener('click', (e) => toggleMenu(e));
+  toggleClose.addEventListener('click', (e) => toggleMenu(e));
+  menu.addEventListener('click', (e) => toggleMenu(e));
 
-/**
- * Function to show/hide the navigation bar on mobile devices
- * @param e The onclick event
- */
-function toggleMenu(e) {
-  if (e.target.tagName !== 'UL') {
-    menu.classList.toggle('show-menu');
-    if (menu.classList.contains('show-menu')) {
-      toggleOpen.style.display = 'none';
-      toggleClose.style.display = 'block';
-    } else {
-      toggleOpen.style.display = 'block';
-      toggleClose.style.display = 'none';
+  /**
+   * Function to show/hide the navigation bar on mobile devices
+   * @param e The onclick event
+   */
+  function toggleMenu(e) {
+    if (e.target.tagName !== 'UL') {
+      menu.classList.toggle('show-menu');
+      if (menu.classList.contains('show-menu')) {
+        toggleOpen.style.display = 'none';
+        toggleClose.style.display = 'block';
+      } else {
+        toggleOpen.style.display = 'block';
+        toggleClose.style.display = 'none';
+      }
     }
   }
-}
 
-window.onload = function () {
-  const $form = document.querySelector('#form');
   $form.addEventListener('submit', handleSubmit);
 
   /**

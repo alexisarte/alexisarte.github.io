@@ -1,7 +1,7 @@
 window.onload = function () {
-  let menu = document.querySelector('#menu');
-  let toggleOpen = document.querySelector('#toggle-open');
-  let toggleClose = document.querySelector('#toggle-close');
+  const menu = document.querySelector('#menu');
+  const toggleOpen = document.querySelector('#toggle-open');
+  const toggleClose = document.querySelector('#toggle-close');
   const $form = document.querySelector('#form');
 
   toggleOpen.addEventListener('click', (e) => toggleMenu(e));

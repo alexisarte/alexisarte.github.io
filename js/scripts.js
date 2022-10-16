@@ -50,7 +50,8 @@ window.onload = function () {
       });
     }
   }
-
+  
+  /*global ScrollReveal*/
   ScrollReveal().reveal('#info-content', { delay: 500 });
   ScrollReveal().reveal('.cards-reveal', { interval: 500 });
   ScrollReveal().reveal('.skills-reveal', { interval: 200 });

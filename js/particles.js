@@ -1,3 +1,4 @@
+/*global particlesJS*/
 particlesJS({
   particles: {
     number: {

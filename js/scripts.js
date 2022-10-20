@@ -48,7 +48,7 @@ window.onload = function () {
     }
   }
   $form.addEventListener('submit', handleSubmit);
-  
+
   /*global ScrollReveal*/
   ScrollReveal().reveal('#info-content', { delay: 500 });
   ScrollReveal().reveal('.cards-reveal', { interval: 500 });

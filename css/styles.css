@@ -146,6 +146,7 @@ span {
   height: 550px;
   background-color: #101e4b;
   margin: 1em;
+  border-radius: 10px;
 }
 
 .card-img {
@@ -153,6 +154,10 @@ span {
   height: 350px;
   margin: auto;
   padding-top: 5%;
+}
+
+.card-img img {
+  border-radius: 10px;
 }
 
 .card-tittle {
@@ -179,6 +184,7 @@ span {
   height: 550px;
   background-color: #101e4b;
   margin: 1em;
+  border-radius: 10px;
 }
 
 /* Skills */

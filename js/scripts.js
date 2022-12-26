@@ -4,10 +4,6 @@ window.onload = function () {
   const toggleClose = document.querySelector('#toggle-close');
   const $form = document.querySelector('#form');
 
-  toggleOpen.addEventListener('click', (e) => toggleMenu(e));
-  toggleClose.addEventListener('click', (e) => toggleMenu(e));
-  menu.addEventListener('click', (e) => toggleMenu(e));
-
   /**
    * Function to show/hide the navigation bar on mobile devices
    * @param e The onclick event
@@ -24,8 +20,14 @@ window.onload = function () {
       }
     }
   }
+  toggleOpen.addEventListener('click', (e) => toggleMenu(e));
+  toggleClose.addEventListener('click', (e) => toggleMenu(e));
+  menu.addEventListener('click', (e) => toggleMenu(e));
 
-  $form.addEventListener('submit', handleSubmit);
+  /**
+   * Function to send the form to formspree
+   * @param event The submit event
+   */
   async function handleSubmit(event) {
     event.preventDefault();
     const form = new FormData(this);
@@ -45,6 +47,9 @@ window.onload = function () {
       });
     }
   }
+  $form.addEventListener('submit', handleSubmit);
+
+  /*global ScrollReveal*/
   ScrollReveal().reveal('#info-content', { delay: 500 });
   ScrollReveal().reveal('.cards-reveal', { interval: 500 });
   ScrollReveal().reveal('.skills-reveal', { interval: 200 });

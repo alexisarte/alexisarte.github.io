@@ -149,33 +149,39 @@ span {
   border-radius: 10px;
 }
 
-.card__img, .double-card__img {
+.card__img,
+.double-card__img {
   width: 90%;
   height: 350px;
   margin: auto;
   padding-top: 5%;
 }
 
-.card__img, .double-card__img img {
+.card__img,
+.double-card__img img {
   border-radius: 10px;
 }
 
-.card__tittle, .double-card__tittle {
+.card__tittle,
+.double-card__tittle {
   padding: 5%;
   text-align: center;
 }
 
-.card__projects-links, .double-card__projects-links {
+.card__projects-links,
+.double-card__projects-links {
   display: flex;
   justify-content: space-evenly;
 }
 
-.card__projects-links a, .double-card__projects-links a {
+.card__projects-links a,
+.double-card__projects-links a {
   color: #fff;
   text-decoration: none;
 }
 
-.card__projects-links i, .double-card__projects-links i {
+.card__projects-links i,
+.double-card__projects-links i {
   font-size: 1.5em;
 }
 

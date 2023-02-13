@@ -205,7 +205,7 @@ span {
   padding-bottom: 2%;
 }
 
-#skills #container {
+#skills #skills-container {
   display: flex;
   justify-content: center;
   align-items: center;

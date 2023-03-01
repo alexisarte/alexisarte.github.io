@@ -28,7 +28,7 @@ img {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  align-items: center;
   background-color: #161b22;
   position: fixed;
   width: 100vw;
@@ -36,7 +36,7 @@ img {
 }
 
 .brand {
-  margin-top: -10px;
+  margin-left: 5%
 }
 
 .brand span {
@@ -51,22 +51,34 @@ img {
 
 .menu li {
   list-style: none;
+  padding: 2em;
+  position: relative
 }
 
 .menu a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
 }
 
 .menu .active {
   color: #0ff;
 }
 
-.menu a:hover {
+.menu li:hover .actived {
+  display: block;
+  scale: 1;
+}
+
+.actived {
   background-color: #0ff;
-  color: #191c32;
-  transition: ease-in 0.4s;
+  min-height: 12px;
+  transition: all 0.7s;
+  scale: 0;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 #toggle-menu {
@@ -338,6 +350,10 @@ span {
 
   #toggle-menu {
     display: block;
+  }
+
+  .navbar {
+    padding: 27px;
   }
 
   .fa-bars {

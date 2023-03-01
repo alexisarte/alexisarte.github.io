@@ -36,7 +36,7 @@ img {
 }
 
 .brand {
-  margin-left: 5%
+  margin-left: 5%;
 }
 
 .brand span {
@@ -52,7 +52,7 @@ img {
 .menu li {
   list-style: none;
   padding: 2em;
-  position: relative
+  position: relative;
 }
 
 .menu a {

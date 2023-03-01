@@ -17,6 +17,22 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="icons/computer-icon.svg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexis | Portfolio</title>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- NORMALIZE -->
+  <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css" />
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+  <!-- SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
 <body>
   <!-- ID Particles.js -->
   <div id="particles-js"></div>
@@ -236,6 +252,21 @@
       </form>
     </div>
   </div>
+  <div id="contact">
+    <div class="headings">
+      <h2>Contact</h2>
+      <div class="divider"></div>
+    </div>
+    <div id="contact-content">
+      <h4>Send me a message...</h4>
+      <form id="form" action="https://formspree.io/f/xrgdggrz" method="POST">
+        <input name="name" type="text" placeholder="Name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Place your message here..." required></textarea>
+        <button type="submit" class="btn-submit">Send message</button>
+      </form>
+    </div>
+  </div>
 
   <footer id="footer">
     <div id="footer-content">
@@ -251,6 +282,15 @@
       </a>
     </div>
   </footer>
+
+  <!-- JS Particless.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="js/particles.js"></script>
+  <!-- CUSTOM JS -->
+  <script src="js/scripts.js"></script>
+  <!-- SWEET ALERT -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
 
   <!-- JS Particless.js -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>

@@ -53,4 +53,14 @@ window.onload = function () {
   ScrollReveal().reveal('#info-content', { delay: 500 });
   ScrollReveal().reveal('.cards-reveal', { interval: 500 });
   ScrollReveal().reveal('.skills-reveal', { interval: 200 });
+
+  // let active = document.querySelectorAll('li');
+  // active.forEach((item) => {
+  //   item.addEventListener('click', (e) => {
+  //     active.forEach((item) => {
+  //       item.classList.toggle('active');
+  //     });
+  //   });
+  // });
+
 };

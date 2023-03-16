@@ -52,7 +52,8 @@ img {
 .menu li {
   list-style: none;
   padding: 2em;
-  position: relative
+  position: relative;
+  cursor: pointer;
 }
 
 .menu a {

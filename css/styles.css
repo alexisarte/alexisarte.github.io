@@ -310,7 +310,7 @@ span {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 200px;
+  height: 100px;
   background-color: #0ff;
   text-align: center;
 }
@@ -335,9 +335,10 @@ span {
     left: 0;
     height: 100vh;
     background-color: #2b2e4b;
-    z-index: 1;
+    z-index: 10;
     transform: translateX(-110%);
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
   }
 
   .show-menu {

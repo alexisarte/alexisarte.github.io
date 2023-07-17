@@ -1,277 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="icons/computer-icon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexis | Portfolio</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://csstools.github.io/normalize.css/11.0.0/normalize.css"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="icons/computer-icon.svg" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexis | Portfolio</title>
-  <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!-- NORMALIZE -->
-  <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css" />
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
-  <!-- SCROLL REVEAL -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="icons/computer-icon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexis | Portfolio</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://csstools.github.io/normalize.css/11.0.0/normalize.css"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="icons/computer-icon.svg" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexis | Portfolio</title>
-  <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!-- NORMALIZE -->
-  <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css" />
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
-  <!-- SCROLL REVEAL -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-
-<body>
-  <!-- ID Particles.js -->
-  <div id="particles-js"></div>
-  <div id="wrapper">
-    <header>
-      <nav class="navbar">
-        <div class="brand">
-          <h2>A<span>R</span></h2>
+  <body>
+    <!-- ID Particles.js -->
+    <div id="particles-js"></div>
+    <div id="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>A<span>R</span></h2>
+          </div>
+          <ul class="menu" id="menu">
+            <li>
+              <a class="active" href="#">Home</a>
+              <span class="actived"></span>
+            </li>
+            <li>
+              <a href="index.html#portfolio">Portfolio</a>
+              <span class="actived"></span>
+            </li>
+            <li>
+              <a href="index.html#skills">Skills</a>
+              <span class="actived"></span>
+            </li>
+            <li>
+              <a href="index.html#contact">Contact</a>
+              <span class="actived"></span>
+            </li>
+          </ul>
+          <div id="toggle-menu">
+            <i class="fas fa-bars" id="toggle-open"></i>
+            <i class="fas fa-close" id="toggle-close"></i>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div id="info-content" class="load-hidden">
+          <h1>I'm <span>Alexis </span>Rodriguez</h1>
+          <p>
+            Junior Frontend Developer and student of Computer Science at
+            Universidad Nacional de La Plata. I know and apply SOLID principles
+            and design patterns. I have worked in SCRUM and other agile
+            methodologies, and also with the Kanban system.
+          </p>
+          <a href="CV-AlexisRodriguez.pdf" id="download-cv" download>
+            Download CV
+          </a>
         </div>
-        <ul class="menu" id="menu">
-          <li>
-            <a class="active" href="#">Home</a>
-            <span class="actived"></span>
-          </li>
-          <li>
-            <a href="index.html#portfolio">Portfolio</a>
-            <span class="actived"></span>
-          </li>
-          <li>
-            <a href="index.html#skills">Skills</a>
-            <span class="actived"></span>
-          </li>
-          <li>
-            <a href="index.html#contact">Contact</a>
-            <span class="actived"></span>
-          </li>
-        </ul>
-        <div id="toggle-menu">
-          <i class="fas fa-bars" id="toggle-open"></i>
-          <i class="fas fa-close" id="toggle-close"></i>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div id="info-content" class="load-hidden">
-        <h1>I'm <span>Alexis </span>Rodriguez</h1>
-        <p>
-          Junior Frontend Developer and student of Computer Science at Universidad Nacional de La Plata. I know and
-          apply SOLID principles and design patterns. I have worked in SCRUM and other agile methodologies, and also
-          with the Kanban system.
-        </p>
-        <a href="CV-AlexisRodriguez.pdf" id="download-cv" download>
-          Download CV
-        </a>
-      </div>
-    </main>
-  </div>
-
-  <section id="portfolio">
-    <div class="headings">
-      <h2>Portfolio</h2>
-      <div class="divider"></div>
+      </main>
     </div>
-    <div id="portfolio-content">
-      <div class="card cards-reveal">
-        <div class="card__img">
-          <img src="img/calculator.png" alt="calculator" />
-        </div>
-        <div class="card__tittle">
-          <h2>Calculator</h2>
-          <p>
-            Calculator created in order to put into practice basic knowledge
-            of HTML, CSS and JavaScript.
-          </p>
-        </div>
-        <div class="card__projects-links">
-          <a href="https://github.com/alexisarte/calculator" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://alexisarte.github.io/calculator/" target="_blank">
-            <i class="fas fa-globe-americas"></i>
-          </a>
-        </div>
-      </div>
-      <div class="card cards-reveal">
-        <div class="card__img">
-          <img src="img/charizard.png" alt="charizard" />
-        </div>
-        <div class="card__tittle">
-          <h2>Pokédex</h2>
-          <p>
-            Project carried out to learn how to do data fetching from a REST
-            API, event management and DOM
-          </p>
-        </div>
-        <div class="card__projects-links">
-          <a href="https://github.com/alexisarte/pokedex" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://alexisarte.github.io/pokedex/" target="_blank">
-            <i class="fas fa-globe-americas"></i>
-          </a>
-        </div>
-      </div>
-      <div class="double-card cards-reveal">
-        <div class="double-card__img">
-          <img src="img/inflation-calculator.png" alt="Inflation calculator" />
-        </div>
-        <div class="double-card__tittle">
-          <h2>Inflation Calculator</h2>
-          <p>
-            Project carried out in order to put into practice basic knowledge
-            of backend (NodeJS, ExpressJs and JSON).
-          </p>
-        </div>
-        <div class="double-card__projects-links">
-          <a href="https://github.com/alexisarte/inflation-calculator" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://inflation-calculator-app-nrrfj.ondigitalocean.app/" target="_blank">
-            <i class="fas fa-globe-americas"></i>
-          </a>
-        </div>
-      </div>
-      <div class="double-card cards-reveal">
-        <div class="double-card__img">
-          <img src="img/weather-app.png" alt="weather app" />
-        </div>
-        <div class="double-card__tittle">
-          <h2>Weather App</h2>
-          <p>
-            Application of the climate of 5 arbitrarily chosen cities for
-            typescript practice.
-          </p>
-        </div>
-        <div class="double-card__projects-links">
-          <a href="https://github.com/alexisarte/weather-app" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://alexisarte.github.io/weather-app/" target="_blank">
-            <i class="fas fa-globe-americas"></i>
-          </a>
-        </div>
-      </div>
-      <div class="double-card cards-reveal">
-        <div class="double-card__img">
-          <img src="img/games-app.png" alt="games application" />
-        </div>
-        <div class="double-card__tittle">
-          <h2>Games app</h2>
-          <p>
-            Game application developed as a team as a final project for the
-            language seminar (javascript) - faculty of informatics UNLP
-          </p>
-        </div>
-        <div class="double-card__projects-links">
-          <a href="https://github.com/alexisarte/games-app" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://games-app-3ba87f44237a.herokuapp.com/" target="_blank">
-            <i class="fas fa-globe-americas"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="skills">
-    <div class="headings">
-      <h2>Skills</h2>
-      <div class="divider"></div>
-    </div>
-    <div id="skills-container">
-      <div id="skills-content">
-        <div class="skills-reveal">
-          <img src="icons/html5_icon.svg" alt="html5 icon" title="HTML" />
+    <section id="portfolio">
+      <div class="headings">
+        <h2>Portfolio</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="portfolio-content">
+        <div class="card cards-reveal">
+          <div class="card__img">
+            <img src="img/calculator.png" alt="calculator" />
+          </div>
+          <div class="card__tittle">
+            <h2>Calculator</h2>
+            <p>
+              Calculator created in order to put into practice basic knowledge
+              of HTML, CSS and JavaScript.
+            </p>
+          </div>
+          <div class="card__projects-links">
+            <a href="https://github.com/alexisarte/calculator" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://alexisarte.github.io/calculator/" target="_blank">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+          </div>
         </div>
-        <div class="skills-reveal">
-          <img src="icons/css3_icon.svg" alt="css3 icon" title="CSS" />
+        <div class="card cards-reveal">
+          <div class="card__img">
+            <img src="img/charizard.png" alt="charizard" />
+          </div>
+          <div class="card__tittle">
+            <h2>Pokédex</h2>
+            <p>
+              Project carried out to learn how to do data fetching from a REST
+              API, event management and DOM
+            </p>
+          </div>
+          <div class="card__projects-links">
+            <a href="https://github.com/alexisarte/pokedex" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://alexisarte.github.io/pokedex/" target="_blank">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+          </div>
         </div>
-        <div class="skills-reveal" id="js-container">
-          <img src="icons/javascript_icon.svg" alt="javascript icon" title="JavaScript" />
+        <div class="double-card cards-reveal">
+          <div class="double-card__img">
+            <img
+              src="img/inflation-calculator.png"
+              alt="Inflation calculator"
+            />
+          </div>
+          <div class="double-card__tittle">
+            <h2>Inflation Calculator</h2>
+            <p>
+              Project carried out in order to put into practice basic knowledge
+              of backend (NodeJS, ExpressJs and JSON).
+            </p>
+          </div>
+          <div class="double-card__projects-links">
+            <a
+              href="https://github.com/alexisarte/inflation-calculator"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://inflation-calculator-app-nrrfj.ondigitalocean.app/"
+              target="_blank"
+            >
+              <i class="fas fa-globe-americas"></i>
+            </a>
+          </div>
         </div>
-        <div class="skills-reveal">
-          <img src="icons/reactjs_icon.svg" alt="reactjs icon" title="React" />
+        <div class="double-card cards-reveal">
+          <div class="double-card__img">
+            <img src="img/weather-app.png" alt="weather app" />
+          </div>
+          <div class="double-card__tittle">
+            <h2>Weather App</h2>
+            <p>
+              Application of the climate of 5 arbitrarily chosen cities for
+              typescript practice.
+            </p>
+          </div>
+          <div class="double-card__projects-links">
+            <a href="https://github.com/alexisarte/weather-app" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://alexisarte.github.io/weather-app/" target="_blank">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+          </div>
         </div>
-        <div class="skills-reveal">
-          <img src="icons/typescript_icon.svg" alt="typescript icon" title="TypeScript" />
+        <div class="double-card cards-reveal">
+          <div class="double-card__img">
+            <img src="img/games-app.png" alt="games application" />
+          </div>
+          <div class="double-card__tittle">
+            <h2>Games app</h2>
+            <p>
+              Game application developed as a team as a final project for the
+              language seminar (javascript) - faculty of informatics UNLP
+            </p>
+          </div>
+          <div class="double-card__projects-links">
+            <a href="https://github.com/alexisarte/games-app" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://games-app-3ba87f44237a.herokuapp.com/"
+              target="_blank"
+            >
+              <i class="fas fa-globe-americas"></i>
+            </a>
+          </div>
         </div>
-        <div class="skills-reveal">
-          <img src="icons/tailwind_icon.svg" alt="tailwind icon" title="Tailwind" />
-        </div>
-        <div class="skills-reveal">
-          <img src="icons/firebase_icon.svg" alt="firebase icon" title="Firebase" />
-        </div>
-        <!-- <div class="skills-reveal">
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="headings">
+        <h2>Skills</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="skills-container">
+        <div id="skills-content">
+          <div class="skills-reveal">
+            <img src="icons/html5_icon.svg" alt="html5 icon" title="HTML" />
+          </div>
+          <div class="skills-reveal">
+            <img src="icons/css3_icon.svg" alt="css3 icon" title="CSS" />
+          </div>
+          <div class="skills-reveal" id="js-container">
+            <img
+              src="icons/javascript_icon.svg"
+              alt="javascript icon"
+              title="JavaScript"
+            />
+          </div>
+          <div class="skills-reveal">
+            <img
+              src="icons/reactjs_icon.svg"
+              alt="reactjs icon"
+              title="React"
+            />
+          </div>
+          <div class="skills-reveal">
+            <img
+              src="icons/typescript_icon.svg"
+              alt="typescript icon"
+              title="TypeScript"
+            />
+          </div>
+          <div class="skills-reveal">
+            <img
+              src="icons/tailwind_icon.svg"
+              alt="tailwind icon"
+              title="Tailwind"
+            />
+          </div>
+          <div class="skills-reveal">
+            <img
+              src="icons/firebase_icon.svg"
+              alt="firebase icon"
+              title="Firebase"
+            />
+          </div>
+          <!-- <div class="skills-reveal">
             <img src="icons/git_icon.svg" alt="git icon" />
           </div> -->
-        <div class="skills-reveal">
-          <img src="icons/nodejs_icon.svg" alt="nodejs icon" title="Node" />
-        </div>
-        <div class="skills-reveal" id="express-container">
-          <img src="icons/expressjs_icon.svg" alt="expressjs icon" title="Express" />
-        </div>
-        <div class="skills-reveal" id="mysql-container">
-          <img src="icons/mysql_icon.svg" alt="mysql icon" title="MySQL" />
+          <div class="skills-reveal">
+            <img src="icons/nodejs_icon.svg" alt="nodejs icon" title="Node" />
+          </div>
+          <div class="skills-reveal" id="express-container">
+            <img
+              src="icons/expressjs_icon.svg"
+              alt="expressjs icon"
+              title="Express"
+            />
+          </div>
+          <div class="skills-reveal" id="mysql-container">
+            <img src="icons/mysql_icon.svg" alt="mysql icon" title="MySQL" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div id="contact">
-    <div class="headings">
-      <h2>Contact</h2>
-      <div class="divider"></div>
+    <div id="contact">
+      <div class="headings">
+        <h2>Contact</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="contact-content">
+        <h4>Send me a message...</h4>
+        <form id="form" action="https://formspree.io/f/xrgdggrz" method="POST">
+          <input name="name" type="text" placeholder="Name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea
+            name="message"
+            placeholder="Place your message here..."
+            required
+          ></textarea>
+          <button type="submit" class="btn-submit">Send message</button>
+        </form>
+      </div>
     </div>
-    <div id="contact-content">
-      <h4>Send me a message...</h4>
-      <form id="form" action="https://formspree.io/f/xrgdggrz" method="POST">
-        <input name="name" type="text" placeholder="Name" required />
-        <input name="email" type="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Place your message here..." required></textarea>
-        <button type="submit" class="btn-submit">Send message</button>
-      </form>
-    </div>
-  </div>
 
-  <footer id="footer">
-    <div id="footer-content">
-      <h2>Alexis Rodriguez</h2>
-      <h5>Frontend web developer</h5>
-    </div>
-    <div id="sotial-networks">
-      <a href="https://github.com/alexisarte" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/alexis-rodriguez-frontend-developer/" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-  </footer>
+    <footer id="footer">
+      <div id="footer-content">
+        <h2>Alexis Rodriguez</h2>
+        <h5>Frontend web developer</h5>
+      </div>
+      <div id="sotial-networks">
+        <a href="https://github.com/alexisarte" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/alexis-rodriguez-frontend-developer/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
 
-  <!-- JS Particless.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="js/particles.js"></script>
-  <!-- CUSTOM JS -->
-  <script src="js/scripts.js"></script>
-  <!-- SWEET ALERT -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</body>
-
+    <!-- JS Particless.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="js/scripts.js"></script>
+    <!-- SWEET ALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
 </html>

@@ -63,4 +63,21 @@ window.onload = function () {
   //   });
   // });
 
+  const navbarHeight = document.querySelector('.navbar').offsetHeight;
+  const links = document.querySelectorAll('.navbar a');
+
+  links.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      const targetPosition = target.getBoundingClientRect().top;
+      const offsetPosition = targetPosition - navbarHeight;
+      
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+
 };

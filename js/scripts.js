@@ -5,7 +5,6 @@ window.onload = function () {
   const $form = document.querySelector('#form');
   const links = document.querySelectorAll('.navbar a');
 
-
   /**
    * Function to show/hide the navigation bar on mobile devices
    * @param e The onclick event
@@ -51,7 +50,6 @@ window.onload = function () {
   }
   $form.addEventListener('submit', handleSubmit);
 
-
   // Add active class to the current button (highlight it)
 
   links.forEach((item) => {
@@ -64,13 +62,12 @@ window.onload = function () {
     });
   });
 
-
   // Smooth scrolling
-  
+
   const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
-  links.forEach(link => {
-    link.addEventListener('click', function(event) {
+  links.forEach((link) => {
+    link.addEventListener('click', function (event) {
       event.preventDefault();
       const target = document.querySelector(link.getAttribute('href'));
       const targetPosition = target.getBoundingClientRect().top;
@@ -78,15 +75,13 @@ window.onload = function () {
 
       window.scrollBy({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     });
   });
 
-  
   /*global ScrollReveal*/
   ScrollReveal().reveal('#info-content', { delay: 500 });
   ScrollReveal().reveal('.cards-reveal', { interval: 500 });
   ScrollReveal().reveal('.skills-reveal', { interval: 200 });
-
 };

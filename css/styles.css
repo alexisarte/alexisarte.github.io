@@ -316,11 +316,13 @@ span {
   width: 100vw;
   height: 100px;
   background-color: #0ff;
+  color: #161b22;
   text-align: center;
 }
 
 #sotial-networks i {
   font-size: 1.5em;
+  color: #0d1117;
 }
 
 #sotial-networks {
